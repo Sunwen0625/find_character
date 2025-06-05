@@ -1,0 +1,24 @@
+arg:
+  #辨識圖片是否含角色
+  do_recognition: true
+  #是否執行圖片增量
+  do_augmentation: false
+  #是否訓練模型
+  do_training: false
+path:
+  dataset_path: "test\predict\augment_positive_images"
+  #要辨識的資料夾
+  image_dir: "C:\\Users\\user\\Downloads\\pic"
+  #辨識完分類後的資料夾
+  predicted_folder: "test\\predict\\predicted"
+  #模型位置
+  model_path: "test/predict/model.pkl"
+  #辨識結果資料夾
+  verified_folder: "test\\predict\\verified\\has_character"
+  #增量資料夾
+  augment_folder: "test\\predict\\augment_positive_images\\has_character"
+  #執行增量前的暫存資料夾
+  temp_folder: "test\\predict\\temp_correct_image"
+  
+#要增量多少張圖片
+n_augments_per_image: 3
