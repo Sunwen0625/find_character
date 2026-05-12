@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "find-character"
+version = "0.1.0"
+description = "Recognize, augment, and train a character image classifier."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "albumentations",
+    "fastai",
+    "opencv-python",
+    "pyyaml",
+    "torch",
+    "transformers",
+]
+
+[project.scripts]
+find-character = "find_character.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
